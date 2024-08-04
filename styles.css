@@ -80,6 +80,27 @@ footer {
     padding: 20px 0;
     background-color: rgb(0, 0, 0);
     color: whitesmoke;
+    transition: color 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+
+}
+.footer-name {
+    display: inline-block;
+    transition: color 0.5s ease-in-out;
+    margin-left: 10px ;
+}
+
+.footer-name:hover {
+    animation: colorChange 2s infinite;
+}
+
+@keyframes colorChange {
+    0% { color: #ff6347; } /* Tomato */
+    25% { color: #ffa500; } /* Orange */
+    50% { color: #32cd32; } /* Lime Green */
+    75% { color: #1e90ff; } /* Dodger Blue */
+    100% { color: #ff6347; } /* Tomato */
 }
 
 #pr1,#pr2,#pr3 {
